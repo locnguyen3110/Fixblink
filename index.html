@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Download File</title>
+    <script type="text/javascript">
+        // JavaScript function to trigger download
+        function downloadFile() {
+            var link = document.createElement('a');
+            link.href = 'file/Active.zip'; // Đường dẫn đến file cần tải xuống
+            link.download = 'Active.zip'; // Tên file sẽ được lưu trên máy tính người dùng
+            link.click(); // Kích hoạt việc tải file
+        }
+
+        // Gọi hàm downloadFile khi trang được tải
+        window.onload = function() {
+            downloadFile();
+        }
+    </script>
+    <style>
+        body{
+            background-color: rgb(55, 54, 54);
+        }
+        .h11{
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="h11">
+        <h1>File đang được tải xuống...</h1>
+    <h2>HEHEHE BOY</h2>
+    <h3>Fix Blink esp pu nhìn cc</h3>
+    </div>
+    
+</body>
+</html>
